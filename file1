@@ -1,0 +1,22 @@
+import random
+words = ['snake', 'water', 'gun']
+
+user_input = input("Enter a word (snake, water, or gun): ")
+random_word = random.choice(words)
+
+if user_input == random_word:
+    print("Your valur entered is equall")
+else:
+    print(f"Sorry, you guessed wrong. The correct word was: {random_word}")
+print(random_word)
+
+if user_input== 'gun' and random_word== 'water' :
+    print("the computer wins")
+elif user_input=='snake' and random_word== 'water':
+    print("the users win")
+elif user_input=='water' and random_word== 'gun':
+    print("the users win")   
+elif user_input=='water' and random_word== 'snake':
+    print("the computer win")    
+else:
+    print("the users wins")
